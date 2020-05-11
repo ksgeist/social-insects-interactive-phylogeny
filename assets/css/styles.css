@@ -1,0 +1,472 @@
+/*
+	Wasp Tree Project 
+    Filename: styles.css
+      
+    Authors: Katherine Geist, Lydia Wessling
+    Date: 6 May 2020 
+		 
+	Supporting files: index.html
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/************ RESET STYLES ************/
+html {
+	font-size: 19px;
+	background-image: url("https://lh3.googleusercontent.com/proxy/TZNxo9krxXiw4k8PITnpe1SzSueic_VDublh1t8fUNq4f9inARN171M0icHTRwAuEK24Fpi5a9MFR6sr5KvZXqu0M5xnFU_cQOg")
+}
+div, figcaption, figure, footer, header, h1, 
+h2, h3, img, li, nav, p, section, ul {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+
+/************ GLOBAL STYLES ************/
+body {
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	width: 100%;
+	height: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 40px;
+	color: #fff;
+}
+h2, h3, h4, h5, h6, legend, label {
+	color: #000;
+}
+h3 {
+	font-size: 28px;
+}
+
+/************ NAV STYLES ************/
+/* The side navigation menu */
+.sidebar {
+/* 
+	position: sticky;
+ */
+	margin: 0;
+	padding: 0;
+	width: 180px;
+  	background-color: #d4cecb;
+	position: fixed;
+	height: 100%;
+  	overflow: auto;
+	font-size: 19px;
+}
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+/* Active/current link */
+.sidebar a.active {
+  background-color: #cf6e3a;
+  color: white;
+}
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+	margin-left: 195px;
+	margin-right: 10px;
+	height: 3000px;
+}
+
+/************ FLYING WASPS ************/
+.flying {
+	position: fixed;	/*	Make this relative when you want it stuck to the top of the page  */
+	width: 100%;	
+   	background-color: rgba(0,0,0,0);
+   	margin-left: auto;
+    margin-right: auto;
+    margin-top: 24%;
+}
+
+/* Leave for when I get js working for disappear on click. */
+/* 
+.flyinglogo {
+  	position: sticky;
+  	margin-left: 20%;
+    display: inline-block;
+    vertical-align: middle;
+	padding: 0.5%;
+	-webkit-animation-duration: 5s;
+	animation-duration: 5s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	animation-name: flying-wasp;
+}
+.flyinglogo2 {
+  	position: sticky;
+	margin-left: 35%;
+	margin-top: -7%;
+    display: inline-block;
+    vertical-align: middle;
+	padding: 4%;
+}
+ */
+
+/************ HEADER ************/
+.header {
+	position: relative;	/*	Make this relative when you want it stuck to the top of the page */
+	width: 100%;
+	background-color: rgba(0,0,0,.25);
+	margin-left: auto;
+    margin-right: auto;
+}
+.header h1 {
+	margin: 20px 0;
+	text-align: center;
+}
+.logo {
+	text-align: center;
+	width: 100%;
+	min-height: 8em;
+    display: block;
+    vertical-align: middle;
+	padding: 0.5%;
+}
+
+
+/* 
+.logo a {
+	display: inline-block;	
+}
+ */
+
+/************ ABOUT SECTION ************/
+.about{
+    margin-top: 10px;
+	background: #fff;
+}
+.about h2 h3{
+	color: #000;
+	margin-left: 1%;
+    margin-bottom: 15px;
+}
+.about p{
+	font-size: 19px;
+	color: #000;
+	line-height: 1.7;
+	margin-top: 1%;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+	letter-spacing: .5px;
+}
+.about img {
+	float: left;
+	padding: 0 10px 0 0
+/* 
+	display: block;
+ */
+}
+.about figcaption {
+	font-size: 16px;
+	font-weight: 300;
+	color: #cf6e3a;
+}
+
+/* Grid images formatting */
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+tr, td {
+	font-size: 16px;
+	font-weight: 300;
+	color: #cf6e3a;
+	text-align: left;
+}
+
+/* List formatting */
+ul li {
+	color: #000;
+	list-style-position: inside;
+	padding: 1px;
+	font-style: italic;
+}
+
+/************ PHYLOGENY SECTION ************/
+.phyloheader {
+	background: #cf6e3a;
+}
+.phyloheader h2{
+	color: #000;
+	margin-left: 1%;
+}
+.phylogeny p{
+	font-size: 19px;
+	color: #000;
+	line-height: 1.7;
+	margin-top: 1%;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+	letter-spacing: .5px;
+}
+iframe {
+	border: none;
+	width: 100%; 
+	height: 1000px;
+}
+
+
+/************ COMMUNICATION SECTIONS ************/
+/* Get Involved */
+.involved {
+	background-color: rgba(207, 110, 58, 0.75);	 /* This is that same burnt orange I've been using, but as RGB */
+	color: #fff;
+}
+.involved label {
+	color: #fff;
+}
+.involved p{
+	font-size: 19px;
+	color: #fff;
+	line-height: 1.2;
+	margin-top: 1%;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+	letter-spacing: .5px;
+}
+.involved legend {
+	color: #fff;
+	font-size: 28px;
+	font-weight: 500;
+}
+.involved input[type=text] { 
+	display: block;
+	font-size: 15px;
+	font-family: 'Lato', sans-serif;
+	background: #fff;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	padding: 5px 0px;
+	width: 50%;
+	font-weight: 400;
+	color: #999;
+}
+.involved select {
+    display: table-row;
+	font-size: 15px;
+	font-family: 'Lato', sans-serif;
+	background: #fff;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	padding: 5px 0px;
+	width: auto;
+	font-weight: 400;
+	color: #000;
+}
+.beewasp {
+	border-radius: 5px;
+	font-size: 40px;
+}
+.involved input[type=email] { 
+	display: block;
+	font-size: 15px;
+	font-family: 'Lato', sans-serif;
+	background: #fff;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	padding: 5px 0px;
+	width: 50%;
+	font-weight: 400;
+	color: #999;
+}
+.involved input[type=submit] {
+	background: #cf6e3a;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto; 
+	padding: 11.5px 25px;
+	position: relative; 
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.involved input[type=reset] {
+    background: #cf6e3a;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto; 
+	padding: 11.5px 25px;
+	position: relative; 
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+/* Sign up for Newsletter */
+.subscribe {
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+}
+.subscribe label {
+	color: #fff;
+}
+.subscribe p{
+	font-size: 19px;
+	line-height: 1.2;
+	margin-top: 1%;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+	letter-spacing: .5px;
+}
+.subscribe legend {
+	color: #fff;
+	font-size: 28px;
+	font-weight: 500;
+}
+.subscribe input[type=text] { 
+	display: block;
+	font-size: 15px;
+	font-family: 'Lato', sans-serif;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	padding: 5px 0px;
+	width: 50%;
+	font-weight: 400;
+	color: #fff;
+}
+.subscribe input[type=email] { 
+	display: block;
+	font-size: 15px;
+	font-family: 'Lato', sans-serif;
+	background: #fff;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	padding: 5px 0px;
+	width: 50%;
+	font-weight: 400;
+	color: #999;
+}
+.subscribe input[type=tel] { 
+	display: block;
+	font-size: 15px;
+	font-family: 'Lato', sans-serif;
+	background: #fff;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	padding: 5px 0px;
+	width: 50%;
+	font-weight: 400;
+	color: #999;
+}
+.subscribe input[type=submit] {
+	background: rgb(0,0,0,0.75);
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto; 
+	padding: 11.5px 25px;
+	position: relative; 
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.subscribe input[type=reset] {
+	background: rgb(0,0,0,0.75);
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto; 
+	padding: 11.5px 25px;
+	position: relative; 
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.subscribe textarea {
+	overflow: auto;
+	display: block;
+	font-size: 15px;
+	font-family: 'Lato', sans-serif;
+	background: #fff;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	padding: 5px 0px;
+	width: 50%;
+	font-weight: 400;
+	color: #999;
+}
+
+/**************** WHO WE ARE PAGE ****************/
+.whoweare {
+	font-size: 15px;
+	background: #fff;
+    margin-top: 10px;
+	background: #fff;
+	margin-bottom: 150px;
+}
+.whoweare h2 h3{
+	color: #000;
+	margin-left: 1.5%;
+    margin-bottom: 15px;
+}
+.whoweare p{
+	font-size: 19px;
+	color: #000;
+	line-height: 1.7;
+	margin-top: 1%;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+	letter-spacing: .5px;
+}
+.whoweare img {
+	float: left;
+	padding: 5px 10px 5px 5px;
+}
+.whoweare figcaption {
+	font-size: 16px;
+	font-weight: 300;
+	color: #cf6e3a;
+}
+
+/**************** FOOTER ****************/
+footer {
+	background: #fff;
+	color: #000;
+	font-weight: 500;
+}
+
+
+
+/**************** RESULTS PAGE ****************/
+/* Written by LW */
+.results {
+    background-color: rgba(207, 110, 58, 0.75);
+}
+form input[type=submit] {
+    background: #cf6e3a;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto; 
+	padding: 11.5px 25px;
+	position: relative; 
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
