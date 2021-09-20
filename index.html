@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<title>Wasp Tree Project</title>
+      	<!--
+         Wasp Tree Project 
+         Filename: index.html
+      
+         Authors: Katherine Geist, Lydia Wessling
+         Date: 6 May 2020 
+		 
+		 Supporting files: scripts.js, styles.css
+      -->
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<script src="modernizr.custom.28018.js"></script>
+
+		<!-- ======== CSS	========================= -->
+
+		<link rel="stylesheet" href="assets/css/styles.css">
+
+		<!-- ======== Favicons	========================= -->
+<!-- 
+		<link rel="shortcut icon" href="assets/images/favicon.png">
+ -->
+	</head>
+	
+<body>
+<!-- ======== Sidebar Nav Layout	========================= -->
+<div class="sidebar">
+	<a class="active" href="#top">Top of Page</a>
+	<a href="#about">About the Project</a>
+	<a href="#phylogeny">Interactive Phylogeny</a>
+<!-- 
+	<a href="#downloads">Downloads</a>
+ -->
+	<a href="#involved">Get Involved</a>
+	<a href="#subscribe">Newsletter Signup</a>
+	<a href="#whoweare">Who We Are</a>
+</div>
+
+<!-- ======== Flying Wasp Layout	========================= -->
+<!-- KG: leave for when I can get the wasps to disappear on click with js -->
+<!-- 
+<div class="flying">
+	<div class="container">
+		<div class="row">
+			<div class="flyinglogo">
+				<img src="assets/images/logo.png" alt="">
+			</div>
+			<div class="flyinglogo2">
+				<img src="assets/images/logo.png" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+
+<!-- ========Main Page Layout	========================= -->
+<div class="content">
+	<!-- ======== Header Layout	========================= -->
+	<!-- ======== Authored by KG	========================= -->
+
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="logo">
+					<a href="#"><img src="assets/images/logo.png" alt=""></a>
+					<h1>Explore Wasp Phylogeny</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- ======== About Section Layout	========================= -->
+	<!-- ======== Authored by KG	========================= -->
+
+	<div class="about" id="about">
+		<div class="container">
+			<div class="row">
+					<h2>Wasps are fascinating insects with species ranging from solitary to eusocial.</h2>			
+						<figure>
+							<img src="assets/images/Social_wasp_Polybia_nest.jpg" alt="Picture of a communal nest of Polybia sp." width="500" height="400"/>
+							<figcaption>A communal nest of <i>Polybia sp.</i>  Courtesy of <a href="https://commons.wikimedia.org/wiki/File:Social_wasp_(Polybia_sp.)_nest.jpg">Wikimedia Commons</a></figcaption>
+						</figure>
+						<p>Wasps, which belong to the insect family Vespidae, include a diverse range of solitary and social behaviors (<a href="https://www.amazon.com/Evolution-Social-Wasps-James-Hunt/dp/0195307976">Hunt 2007</a>). These social behaviors can include aggregation during feeding, parental care of the young, and communal nesting. <br/> <br/> Eusociality, or “True Sociality”, is distinguished from other types of sociality in insects for species that exhibit these four characteristics:</p>
+							<ul>
+								<li>Share a nest</li>
+								<li>Conspecific individuals cooperate in brood care</li>
+								<li>Reproductive division of labor, where sterile (or less fecund) individuals work for the benefit of a few reproductive individuals</li>
+								<li>Overlapping generations, where offspring contribute to nest/colony labor while parents are still alive</li>
+							</ul>
+						<br/>
+						<p>Among the wasps, yellowjackets are one group of eusocial insects, meeting all four of these criteria. Another common wasp, the paper wasp, is often considered semisocial because although there is reproductive division of labor, workers are not sterile as they are, for example, in yellowjackets or honeybees. Yet, these individuals typically forego their own reproductions for the colony. In comparison, solitary wasps, like mud daubers, create nests with prey items to provision their offspring but there is no overlap of generations in these wasps.</p>
+
+						<!-- Make a grid of images -->
+						<table>
+    						<tr>
+	   							<td><img src="assets/images/Three_Southern_Yellowjackets_Vespula_squamosa.jpg" alt="Three Southern Yellowjackets, Vespula squamosa" width="300" height="200"/></td>
+	   							<td><img src="assets/images/metricus_paper_wasp.jpg" width="300" height="200" alt="Polistes metricus, paper wasp"/></td>
+								<td><img src="assets/images/Black_and_Yellow_Mud_Dauber_Wasp_Sceliphron_caementarium.jpg" alt="Black and Yellow Mud Dauber Wasp, Sceliphron caementarium" width="300" height="200"/></td>
+							 </tr>
+   							<tr>
+	    						<td>The eusocial Southern Yellowjacket,<i> Vespula squamosa</i>  Courtesy of <a href="https://commons.wikimedia.org/wiki/File:Three_Southern_Yellowjackets_(Vespula_squamosa).jpg ">Wikimedia Commons</a></td>
+    							<td>The semisocial paperwasp,<i> Polistes metricus</i>  Courtesy of <a href="https://commons.wikimedia.org/wiki/File:Metricus_Paper_Wasp_(Polistes_metricus)_at_trailhead_-_Flickr_-_Jay_Sturner.jpg">Wikimedia Commons</a></td>
+    							<td>The solitary black and yellow mud dauber,<i> Sceliphron caementarium</i>  Courtesy of <a href="https://commons.wikimedia.org/wiki/File:Black_and_Yellow_Mud_Dauber_Wasp_(Sceliphron_caementarium)_-_Kitchener,_Ontario.jpg">Wikimedia Commons</a></td>
+							</tr>
+						 </table>			
+
+					<h3>New Molecular Phylogeny Supports Two Independent Origins</h3>
+						<p>Until rather recently, it was thought that eusociality in the wasps had evolved only once (<a href="https://academic.oup.com/mbe/article/35/9/2097/5040136">Piekarski <i>et al.</i> 2018</a>). This single origin of eusociality in wasps was derived from extensive character-based evidence (<i>e.g.</i>, <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-3113.1982.tb00124.x">Carpenter 1982</a>, <a href="https://s3.amazonaws.com/academia.edu.documents/7078162/68_1_pickett_3-33.pdf?response-content-disposition=inline%3B%20filename%3DSimultaneous_analysis_and_the_origin_of.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIATUSBJ6BACA7GKK6Q%2F20200511%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200511T024012Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIGPAoiS6c3M9WDPqkZL6b34SKnnXhIOmAjZI3TTcy5b0AiAGcKAabJt7he5OEqdcmpgc%2BWfYIiPCcvXXwc6%2BRDB7hiq0AwgjEAAaDDI1MDMxODgxMTIwMCIMlr5WG%2BNj9f0aB%2BSEKpED09%2FCej3qcE87QPOEOrT79s6scwQMjJvSSeuaOl5J61sylgRJ3bG7OZVLvZbqtstwLZyJBrtOYtE6slaNVfoMtg4QFPkX5D3apX%2FyBiSwJkcni4AxmCfSzc%2Bn%2Frxu6JG%2BWmgbYng0REdhlOH7KaX71G2%2FGsTjvD1MD2SBEis6yNwSsoBZv12QtPBk3VQFVwbggbd6Bzl9XBS3%2BDqoylg4uvHTUyNup0BScI8dOV%2BDXY%2FI2ZoXNxiAnIvZzdW%2B4cyqscxZsuqdKy%2FZLfRlZ7IY4qfH%2FrOJjR0bpyx9KHnEoOLy7Wfypzd%2BOWgueQ1m3JjZzz11sTdyEo%2BKEw6cO3iMm754Vhm2oYboORGyKLVM5acerDjcCpD08jdKMYsZrTgsUmqymBm2HAVd7Tx%2BZZEM9WtIe2U4loxw86iAPyp3kLc%2Bd4TdotdfIaRpp245vUijQB2Ypijy%2BFaZNyVih2lmA4obfiOGpsrypH5962EeHKytG665trPDNPxPGF2CO%2FtfweVLAkRph5eMJPvsoj0AeJ4wm9fi9QU67AFHYmX1yh8sMPfzWoz%2BywrGtOwglqHOAHSt8Lr1o8pFOOS2Emlg1MLHcgWNoeGB9KRDJ5cyzIGxs%2B9d4P7hfwFIcHXyiZkrbHTOW5bCFwj3DAPsn2tPnpwBrTW18XRyF8eBle5Hod5frzd6n1sOGvox%2FzzyOoVkblKkEY89pGC5JwOkr7cT6B5nMZejWFdtlSxjIyNQzdO03yZ2p6BEjuIxMsqwIw3ViFGbNEgY1AC3%2Fy2MLIJs29eD78d41BhPWccw3dIpfXEeSVzXv3OwKWsbJjvu9Xtn1nl4Faied5OVraTbU2f8pWHic5ZPpg%3D%3D&X-Amz-Signature=6e30e519c11f7137ee0f361185e73545660351bf53e795a3edbb5095a94bb1cc">Pickett & Carpenter 2010</a>). However, mounting molecular evidence firmly places two independent origins of eusociality in wasps.</p>
+						<p>Because the social traits do not always map to the molecular phylogeny, the purpose of this site is to allow exploration of how key solitary and social traits may have evolved. It it our hope to spark new questions and hypotheses about the evolution of sociality in the context of the wasp phylogeny.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- ======== Phylogeny Section Layout	========================= -->
+	<!-- ======== Authored by KG	========================= -->
+
+	<div class="phylogeny" id="phylogeny">
+		<div class="container">
+			<div class="row">
+				<div class="phyloheader">
+					<h1> Interactive Phylogeny of the Vespidae </h1>
+				</div>
+				<div class="shiny">
+					<iframe id="wasp.tree" src=" https://ksgeist.shinyapps.io/wasp_tree/"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ======== Get Involved Layout	========================= -->
+	<!-- ======== Authored by LW	========================= -->
+
+	<div class="involved" id="involved">
+		<div class="container">
+			<div class="row">
+				<h1>Data Repository Access</h1>
+				<p>This project has been entirely developed with research from the vast social insect community, and we welcome contributions of published and unpublished data that we may have missed. If you would like access to a particular species’ data repository to add information, please fill out the following form. Please note that if you have data for multiple species, we would prefer that you fill out multiple forms</p>
+				
+				<form class="repositoryform" action="results.html">
+				<fieldset class="contactinfo">
+					<legend>Contact Information</legend>
+					<label for="nameinput">
+						 Name
+						<input type="text" name="name" id="nameinput" placeholder="First and Last Name" required><br>
+					</label>
+					<label for="emailinput">
+						Email
+						<input type="email" name="email" id="emailinput" placeholder="address@example.com" required>
+					</label>
+				</fieldset>
+				<fieldset class="specification">
+					<legend>Repository Specifications</legend>
+				    <div class="selectdiv">
+                        <label for="beewasp">
+                        Bee/Wasp
+                        <select name="beewasp" id="beewasp">
+                            <option value="Bee">Bee</option>
+                            <option value="Wasp">Wasp</option>
+                        </select>
+                        </label><br>
+                    </div><br>
+				    <label for="species">
+						Species
+						<input type="text" name="species" id="species" required><br>
+					</label>
+					<label for="digitalobjectidentifier">
+						DOI to Publication (if available)
+						<input type="text" name="digitalobjectidentifier" id="digitalobjectidentifier" required><br>
+					</label>
+				</fieldset>
+				<fieldset class="submitbutton">
+					<input type="submit" id="submit" value="Submit">
+                    <input type="reset" id="reset" value="Reset">    
+                </fieldset>
+			</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- ======== Subscribe Layout	========================= -->
+	<!-- ======== Authored by LW	========================= -->
+	<div class="subscribe" id="subscribe">
+		<div class="container">
+			<div class="row">
+				<h1>Contact Us</h1>
+				<p>This project is still under development. We welcome comments, feedback, and questions. To subscribe to monthly updates, please fill out the form below. </p>
+				<form action="results.html">
+					<fieldset class="contactinfo">
+						<legend>Contact Information</legend>
+						<label for="firstnameinput">
+							First Name
+							<input type="text" name="firstname" id="firstnameinput" placeholder="First Name" required><br>
+						</label>
+						<label for="lastnameinput">
+							Last Name                              
+							<input type="text" name="lastname" id="lastnameinput" placeholder="Last Name" required><br>
+						</label>
+						<label for="phoneinput">
+							Phone
+							<input type="tel" name="phone" id="phoneinput" placeholder="(123)456-7891" required><br>
+						</label>
+						<label for="emailinput2">
+							Email
+							<input type="email" name="email" id="emailinput2" placeholder="address@example.com" required>
+						</label>
+					</fieldset>
+					<fieldset class="feedback">
+						<legend>Suggestions or Feedback</legend>
+						<label for=comments>
+							<textarea name="comments" id="comments" rows="5" cols="55" placeholder="Questions, comments, etc."></textarea>
+						</label>
+					</fieldset>
+					<fieldset class="newsletter">
+						<legend>Newsletter</legend>
+						<label for="monthlynewsletter">
+							Please Send Me A Monthly Newsletter
+							<input type="checkbox" name="monthlynewsletter" id="monthlynewsletter" value="Please Send Me A Monthly Newsletter">
+						</label>
+					</fieldset>
+					<fieldset class="submitbutton">
+						<input type="submit" id="submit2" value="Submit">
+						<input type="reset" id="reset2" value="Reset">
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<!-- ======== Who We Are Layout	========================= -->
+	<!-- ======== Authored by KG	========================= -->		
+	<div class="whoweare" id="whoweare">
+		<div class="container">
+			<div class="row">
+				<h2>Who Are We?</h2>
+						<figure>
+							<img src="assets/images/Liostenogaster_flavolineata.jpg" alt="Small colony with two females of Liostenogaster flavolineata" width="300" height="400"/>
+							<figcaption>Small colony with two females of <i>Liostenogaster flavolineata</i>.  Courtesy of <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Stenogastrinae%2C_Liostenogaster_Flavolineata%2C_Author%2C_David_Baracchi.jpg/1024px-Stenogastrinae%2C_Liostenogaster_Flavolineata%2C_Author%2C_David_Baracchi.jpg">Wikimedia Commons</a></figcaption>
+						</figure>				
+					<br/>					
+					<p>We are an international consortium of social insect researchers spanning three countries: the USA, UK, and Canada. Our interests lie at the intersection of genomics, behavior, phylogeny, and physiology. You can read more about our individual interests at our websites. </p>
+						<br/>
+						<h3>Primary Investigators</h3>
+						<ul>
+							<li><a href="https://www.tothlab.org">Dr. Amy Toth (USA)</a></li>
+							<li><a href="http://www.sumnerlab.co.uk/">Dr. Seirian Sumner (UK)</a></li>
+							<li><a href="http://www.rehanlab.com ">Dr. Sandra Rehan (Canada)</a></li>
+						</ul>
+						<br/>
+						<h3>Postdoctoral Research Scientists</h3>
+						<ul>
+							<li><a href="https://ksgeist.github.io ">Dr. Katherine Geist (USA)</a></li>
+							<li><a href="https://emelinefavreau.github.io">Dr. Emeline Favreau (UK)</a></li>
+						</ul>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+			</div>
+		</div>
+	</div>
+		<!-- ======== FOOTER	========================= -->
+		<!-- ======== Authored by KG	========================= -->		
+	<footer>
+		<p>Copyright &copy;2020, Katherine S. Geist and Lydia Wessling</p>
+	</footer>
+</div>
+
+
+
+
+	<!-- JavaScript
+	================================================== -->
+	
+	<script src="assets/js/script.js"></script>
+
+	<!-- End Document
+	================================================== -->
+
+</body>
+</html>
+
+	
